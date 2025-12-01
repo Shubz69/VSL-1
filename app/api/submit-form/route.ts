@@ -1,5 +1,17 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { prisma } from '@/lib/prisma'
+
+// Dynamic import to avoid build-time issues
+let prisma: any = null
+async function getPrisma() {
+  if (!prisma) {
+    const { prisma: prismaClient } = await import('@/lib/prisma')
+    prisma = prismaClient
+  }
+  return prisma
+}
+
+export const dynamic = 'force-dynamic'
+export const runtime = 'nodejs'
 
 export async function POST(request: NextRequest) {
   try {
@@ -23,8 +35,11 @@ export async function POST(request: NextRequest) {
       )
     }
 
+    // Get Prisma client
+    const prismaClient = await getPrisma()
+    
     // Save to database
-    const submission = await prisma.application.create({
+    const submission = await prismaClient.application.create({
       data: {
         fullName,
         email,
