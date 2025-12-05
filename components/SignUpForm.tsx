@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, FormEvent } from 'react'
+import { trackEvent } from '@/components/MetaPixel'
 
 export default function SignUpForm() {
   const [formData, setFormData] = useState({
@@ -42,6 +43,19 @@ export default function SignUpForm() {
       }
 
       setSubmitStatus('success')
+      
+      // Track conversion event in Meta Pixel
+      trackEvent('Lead', {
+        content_name: 'VSL Application Form',
+        content_category: 'Psychology Course Application',
+      })
+      
+      // Track custom conversion event
+      trackEvent('CompleteRegistration', {
+        content_name: 'Application Submitted',
+        status: 'completed',
+      })
+      
       setFormData({
         fullName: '',
         email: '',

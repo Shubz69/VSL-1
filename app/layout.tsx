@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import MetaPixel from '@/components/MetaPixel'
 
 export const metadata: Metadata = {
   title: 'Transform Your Life with Psychology | Expert Courses & 1-to-1 Sessions',
@@ -13,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <MetaPixel />
+        {children}
+      </body>
     </html>
   )
 }
