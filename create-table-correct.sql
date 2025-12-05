@@ -18,3 +18,4 @@ SHOW TABLES;
 -- Show the table structure
 DESCRIBE applications;
 
+

@@ -10,3 +10,4 @@ DESCRIBE applications;
 -- View all data in the table (will be empty if no submissions yet)
 SELECT * FROM applications;
 
+

@@ -10,3 +10,4 @@ DESCRIBE applications;
 -- Step 4: View any existing data (will be empty until first submission)
 SELECT * FROM applications ORDER BY createdAt DESC;
 
+
