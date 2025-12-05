@@ -35,11 +35,12 @@ export default function IntroSection({ onSignUpClick }: IntroSectionProps) {
             onClick={onSignUpClick}
             className="px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-bold text-lg rounded-lg shadow-lg shadow-primary-500/50 transform hover:scale-105 transition-all duration-300"
           >
-            Discover The Psychology Secrets That Change Everything
+            Reserve Your Seat Now
           </button>
         </div>
       </div>
     </section>
   )
 }
+
 

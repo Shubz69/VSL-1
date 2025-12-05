@@ -43,7 +43,7 @@ export default function FinalCTASection({ onSignUpClick }: FinalCTASectionProps)
             onClick={onSignUpClick}
             className="px-12 py-6 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-bold text-2xl rounded-xl shadow-2xl shadow-primary-500/50 transform hover:scale-105 transition-all duration-300"
           >
-            Start Your Transformation Now
+            Reserve Your Seat Now
           </button>
           <p className="text-gray-400 text-lg">
             Limited availability • Don't wait until you're ready to be ready
@@ -53,4 +53,5 @@ export default function FinalCTASection({ onSignUpClick }: FinalCTASectionProps)
     </section>
   )
 }
+
 

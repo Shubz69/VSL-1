@@ -60,3 +60,4 @@ If you still see build errors:
 3. Try manually running `npx prisma generate` locally to test
 4. Check Railway database is accessible from outside
 
+

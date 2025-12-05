@@ -31,7 +31,7 @@ export default function HeroSection({ onSignUpClick }: HeroSectionProps) {
           onClick={onSignUpClick}
           className="px-8 py-4 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-semibold text-lg rounded-lg shadow-lg shadow-primary-500/50 transform hover:scale-105 transition-all duration-300 animate-slide-up"
         >
-          Start Your Journey
+          Reserve Your Seat Now
         </button>
       </div>
 
@@ -44,4 +44,5 @@ export default function HeroSection({ onSignUpClick }: HeroSectionProps) {
     </section>
   )
 }
+
 

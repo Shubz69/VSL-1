@@ -49,7 +49,7 @@ export default function VideoSection({ onSignUpClick }: VideoSectionProps) {
             onClick={onSignUpClick}
             className="px-10 py-5 bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-500 hover:to-primary-600 text-white font-bold text-xl rounded-xl shadow-2xl shadow-primary-500/50 transform hover:scale-105 transition-all duration-300"
           >
-            Sign Up Now
+            Reserve Your Seat Now
           </button>
           <p className="text-gray-400 mt-4 text-sm">
             Limited spots available • Don't miss out on this opportunity
@@ -59,4 +59,5 @@ export default function VideoSection({ onSignUpClick }: VideoSectionProps) {
     </section>
   )
 }
+
 
