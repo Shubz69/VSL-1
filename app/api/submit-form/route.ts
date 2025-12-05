@@ -48,6 +48,20 @@ export async function POST(request: NextRequest) {
       },
     })
 
+    // Send notification email (don't block response if email fails)
+    try {
+      const { sendNotificationEmail } = await import('@/lib/email')
+      await sendNotificationEmail({
+        fullName,
+        email,
+        phoneNumber,
+        reason,
+      })
+    } catch (emailError) {
+      console.error('Email notification failed (non-critical):', emailError)
+      // Continue even if email fails - data is already saved
+    }
+
     return NextResponse.json(
       { 
         success: true, 
