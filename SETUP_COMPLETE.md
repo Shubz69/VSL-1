@@ -2,7 +2,7 @@
 
 ## 🎯 REMEMBERED CREDENTIALS
 
-**Gmail App Password:** `tpck hmoq cunk quyv` (remove spaces when using: `tpckhmoqcunkquyv`)
+**Gmail App Password:** `ahqe oipo iqgz vbjg` (remove spaces when using: `ahqeoi poi qgzvbjg`)
 
 **Railway Database Connection:**
 - Host: `yamanote.proxy.rlwy.net`
@@ -24,15 +24,15 @@ mysql://root:PqrldZpsOMQoWLFErteQBxdtQpMNTiDg@yamanote.proxy.rlwy.net:18593/rail
 
 ### Variable 2: EMAIL_USER
 ```
-shubzfx@gmail.com
+Shabzfazl@gmail.com
 ```
-(Or whatever Gmail address you're using to send emails)
+(This is the Gmail address that will send emails - make sure it's the same account the app password belongs to)
 
 ### Variable 3: EMAIL_PASSWORD
 ```
-tpckhmoqcunkquyv
+ahqeoi poi qgzvbjg
 ```
-(Remove spaces from the app password: `tpck hmoq cunk quyv` becomes `tpckhmoqcunkquyv`)
+(Remove spaces from the app password: `ahqe oipo iqgz vbjg` becomes `ahqeoi poi qgzvbjg`)
 
 ## 📋 VARIABLES FOR LOCAL .env FILE
 
@@ -40,8 +40,8 @@ Create a file named `.env` in your project root:
 
 ```env
 DATABASE_URL="mysql://root:PqrldZpsOMQoWLFErteQBxdtQpMNTiDg@yamanote.proxy.rlwy.net:18593/railway"
-EMAIL_USER="shubzfx@gmail.com"
-EMAIL_PASSWORD="tpckhmoqcunkquyv"
+EMAIL_USER="Shabzfazl@gmail.com"
+EMAIL_PASSWORD="ahqeoi poi qgzvbjg"
 ```
 
 ## 🔧 MYSQL WORKBENCH SETTINGS
@@ -68,12 +68,12 @@ EMAIL_PASSWORD="tpckhmoqcunkquyv"
 2. **Create local .env file** (see above)
 3. **Redeploy Vercel** - Go to Deployments → Click "Redeploy"
 4. **Test the form** - Fill it out and check:
-   - Email arrives at `Shubzfx@gmail.com`
+   - Email arrives at `Shabzfazl@gmail.com`
    - Data appears in MySQL Workbench
 
 ## 📧 EMAIL RECIPIENT
 
-All form submissions send emails to: **Shubzfx@gmail.com**
+All form submissions send emails to: **Shabzfazl@gmail.com**
 
 ## 📊 EXPORT DATA TO EXCEL
 

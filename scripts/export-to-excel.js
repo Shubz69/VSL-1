@@ -5,16 +5,19 @@
  * Make sure you have .env file with DATABASE_URL set
  */
 
+// Load environment variables first, before importing Prisma
+const path = require('path')
+require('dotenv').config({ path: path.join(__dirname, '..', '.env') })
+
 const { PrismaClient } = require('@prisma/client')
 const fs = require('fs')
-const path = require('path')
-require('dotenv').config()
 
 const prisma = new PrismaClient()
 
 async function exportToCSV() {
   try {
     console.log('Fetching submissions from database...')
+    console.log('DATABASE_URL:', process.env.DATABASE_URL ? 'Found' : 'NOT FOUND')
     
     const submissions = await prisma.application.findMany({
       orderBy: {
@@ -63,11 +66,10 @@ async function exportToCSV() {
     
   } catch (error) {
     console.error('Error exporting data:', error)
+    console.error('\nMake sure your .env file exists and has DATABASE_URL set.')
   } finally {
     await prisma.$disconnect()
   }
 }
 
 exportToCSV()
-
-
